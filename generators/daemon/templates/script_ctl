@@ -4,6 +4,8 @@ require "daemons"
 require 'yaml'
 require 'erb'
 
+file_name = File.dirname(__FILE__) + "/../../vendor/rails/activesupport/lib/active_support.rb"
+
 if(File.exists?(file_name))
   require file_name
 else
