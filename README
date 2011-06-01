@@ -1,8 +1,14 @@
 Daemon Generator
 ================
 
+To install:
+> rails plugin install https://github.com/dougal/daemon_generator.git
+
 To get yourself rolling:
 > sudo gem install daemons
+> rails generate daemon <name>
+
+# for Rails 2.x
 > ./script/generate daemon <name>
 
 Then insert your code in the lib/daemons/<name>.rb stub. All pid's and logs will live in the normal log/ folder.  This helps to make things Capistrano friendly.
